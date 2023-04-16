@@ -1,0 +1,113 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh; /* it will take up the full height of the viewport*/
+    background: linear-gradient(135deg, #4b9ad7, #031c4c); /*diagonal gradient effec*/
+}
+.container{
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%; left: 50%;
+    min-width: 450px;
+    padding: 30px 40px;
+    }
+
+#newtask{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 30px 20px;
+    box-shadow: 0 11px 20px rgba(0, 0, 0, 0.6); /*RGB and (alpha) values*/
+    border-radius: 4px; 
+}
+
+#newtask input{
+    position: relative;
+    color: rgb(32, 77, 117);
+    width: 80%;
+    height: 42px;
+    font-family: 'Galpon', sans-serif;
+    font-size: 15px;  
+    border:2px solid rgb(179, 180, 194);
+    border-radius: 5px;
+    padding: 10px;
+    
+    font-weight: 300;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: rgb(149, 156, 214);
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    background-color: #3c5a93;
+    width: 50px;
+    height: 34px;
+    border-radius: 11px;
+    color: aliceblue;
+    cursor: pointer;/*change the appearance of the mouse cursor when it hovers over an element*/
+    outline: none;
+    border-color: aliceblue;
+    font-family: 'Galpon', sans-serif;
+    
+}
+
+#tasks{
+    position: relative;
+    /* height: 50px; */
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.571);
+    border-radius: 12px;
+    display: flex; /*allowing them to be arranged in a row or column with flexible widths and heights*/
+    flex-direction: column;
+    align-items: center; /*aligning them to the horizontal center of the container*/
+    justify-content: space-between; /*evenly distribute the content of a flex container*/
+    /*cursor: pointer;*/
+}
+
+.task{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Galpon', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task .delete{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+}
+
+.taskWrapper{
+    width: 100%;
+}
+
+.completed{
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #3c5a93;
+}
+
+
+
